@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Demo_App.Home"
+             BackgroundColor="{x:StaticResource BGCOLOR}"
+             Title="Home">
+    <ContentPage.Content>
+        <Grid Margin="0,0,0,-30" RowDefinitions="*,*,*,100" ColumnDefinitions="*,*">
+            <Border Grid.Row="0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Image Grid.Row="1" Grid.Column="0" Source="latte1.jpeg" Aspect="AspectFill" />
+            </Border>
+            <Border Grid.Row="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Image Grid.Row="2" Grid.Column="0" Source="americano.jpeg" Aspect="AspectFill" />
+            </Border>
+            <Border Grid.Row="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Image Grid.Row="2" Grid.Column="0" Source="iced_atte.jpeg" Aspect="AspectFill" />
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Image Grid.Row="1" Grid.Column="0" Source="latte.jpeg" Aspect="AspectFill" />
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Image Grid.Row="2" Grid.Column="0" Source="latte1.jpeg" Aspect="AspectFill" />
+            </Border>
+            <Border Grid.Row="2" Grid.Column="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Image Grid.Row="2" Grid.Column="0" Source="americano.jpeg" Aspect="AspectFill" />
+            </Border>
+            <HorizontalStackLayout Margin="80,10,0,40" HorizontalOptions="Center" Grid.Row="3">
+                <Label Text="Welcome to Our Cafe" FontSize="24"
+                      TextColor="White"/>
+            </HorizontalStackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+
+</ContentPage>

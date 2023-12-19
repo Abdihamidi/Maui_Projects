@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Coffee_Demo_App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Coffee_Demo_App"
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="{x:StaticResource Light_Gray}"
+    Title="Coffee_Demo_App">
+
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <StackLayout>
+                <Label Text="Coffee Shop"
+                       TextColor="GhostWhite"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                <Label Text="App Version 1.0.0"
+                       TextColor="GhostWhite"
+                       HorizontalOptions="Center" />
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Black"
+                  HeightRequest="200">
+                <Image Aspect="AspectFill"
+                       Source="cup2.jpeg"
+                       Opacity="0.6" />
+                <Label Text="Coffe Shop"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       FontFamily="RubikRegular"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Dashboard"
+             Icon="home.png">
+            <ShellContent Title="Home"
+                          Icon="home.png"
+                          ContentTemplate="{DataTemplate local:Home}" />
+        </Tab>
+
+        <ShellContent Title="Cart"
+                      Icon="cart.png"
+                      ContentTemplate="{DataTemplate local:Cart}" />
+        <ShellContent Title="Orders"
+                      Icon="order.png"
+                      ContentTemplate="{DataTemplate local:Orders}" />
+        <ShellContent Title="About"
+                      Icon="help.png"
+                      ContentTemplate="{DataTemplate local:Orders}" />
+    </FlyoutItem>
+
+
+
+
+    <ShellContent Title="Help"
+                  Icon="about.png"
+                  ContentTemplate="{DataTemplate local:AboutPage}" />
+
+</Shell>

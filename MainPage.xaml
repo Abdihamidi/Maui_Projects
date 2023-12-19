@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Demo_App.MainPage">
+
+
+    <Grid>
+        <Image Source="coffee4.jpeg" Aspect="AspectFill" />
+        <Button x:Name="myButton" Text="Get Started" VerticalOptions="End" HorizontalOptions="Center"
+                BackgroundColor="{x:StaticResource Orange}"
+                TextColor="Black"
+                FontSize="18"
+                CornerRadius="12"
+                Margin="40,20,10,30"
+                Clicked="myButton_Clicked"
+                />
+    </Grid>
+
+
+</ContentPage>
